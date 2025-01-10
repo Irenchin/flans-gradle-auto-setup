@@ -8,7 +8,7 @@ public class TaskUnpackFlans extends Task {
 	public boolean execute() {
 		updateStatus("\n\n\n");
 		updateStatus("Unpacking Flans Mod...\n");
-		return moveContentsToParentAndDelete(Main.folder.toPath()+"/FlansMod-1.7.10");		
+		return moveContentsToParentAndDelete(Main.folder.toPath()+"/"+Main.repo.getText()+"-"+Main.branch.getText());		
 	}
 
 }
